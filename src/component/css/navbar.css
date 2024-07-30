@@ -1,0 +1,116 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100vw;
+    overflow-x: hidden; /* ป้องกันการเลื่อนแนวนอน */
+}
+
+.nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:linear-gradient(to right,#F7F9F2, #91DDCF);
+    padding: 20px 80px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin: 20px auto; /* ตั้งค่าให้ margin เป็น auto เพื่อให้ตรงกลาง */
+    border-radius: 20px;
+    position: fixed; /* เพิ่มเพื่อยึดตำแหน่งด้านบน */
+    top: 0; /* ตั้งค่าให้ติดกับด้านบน */
+    left: 50%;
+    transform: translateX(-50%); /* ทำให้ตรงกลาง */
+    z-index: 1000; /* ให้แน่ใจว่า navbar จะอยู่เหนือองค์ประกอบอื่นๆ */
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: black;
+    transition: color 0.3s ease;
+    position: relative; 
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: blueviolet;
+}
+
+#navbar li a::after {
+    content: "";
+    width: 0; /* เริ่มต้นที่ 0% */
+    height: 2px;
+    background: blueviolet;
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+    transition: width 0.5s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลงความกว้างนุ่มนวล */
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+    width: 60%; /* เปลี่ยนความกว้างเมื่อ hover หรือ active */
+}
+
+#mobile {
+    display: none;
+}
+
+#mobile i {
+    color: #fff;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    #navbar {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 90px;
+        right: -350px;
+        width: 300px;
+        height: 100vh;
+        background: linear-gradient(to right,#F7F9F2, #91DDCF);
+        padding: 40px 0 0 10px;
+        border-radius: 20px;
+        transition: right 0.5s ease; /* เพิ่ม transition เพื่อให้การเลื่อนนุ่มนวล */
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #mobile i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+}

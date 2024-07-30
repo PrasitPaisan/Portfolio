@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Playwrite+BE+WAL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap');
+
+.one-background {
+    background: linear-gradient(to right, #91DDCF, #BBE9FF, #F7F9F2, #91DDCF, #FFF8DB); 
+    background-size: 300% 100%; 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    animation: backgroundMove 20s linear infinite; 
+    padding-top: 10%;
+    min-height: 100vh; 
+    gap: 20px;
+    transition: all 1s ease; 
+    
+}
+@keyframes backgroundMove {
+    0% ,100%{
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+}
+
+
+.box-image {
+    width: 365px; 
+    height: 500px; 
+    margin: 10px; 
+    transition: all 1s ease; 
+    animation: moveUpDown 3s ease-in-out infinite;
+}
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); 
+    }
+}
+
+.box-description {
+    width: 55%; 
+    height: auto; 
+    margin: 0px; 
+    gap: 0;
+    transition: all 1s ease; 
+}
+
+.box-description h1,
+.box-description h3,
+.box-description h4,
+.box-description p {
+    margin: 8px;
+    padding: 8px;
+}
+
+.box-description h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 120px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+            typing 5s ;
+}
+
+.box-description h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+.box-description h4, p {
+    font-size: 40px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.box-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-description {
+    background: transparent;
+    backdrop-filter: blur(40px); 
+}
+
+@keyframes borderMove {
+    0% {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    50% {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    100% {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+}
+
+.handsomeImage {
+    width: 365px;
+    height: 550px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: all 1s ease; 
+    box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.5);
+    animation: borderMove 3s ease infinite;
+}
+
+
+
+@media (max-width: 1024px) {
+    .box-description {
+        width: 80%;
+        transition: width 1s ease; 
+    }
+    .box-description h1 {
+        font-size: 100px;
+    }
+    .box-description h3 {
+        font-size: 60px;
+    }
+    .box-description h4, .box-description p {
+        font-size: 23px;
+    }
+    .box-image {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-description {
+        width: 90%;
+        transition: width 1s ease; 
+    }
+    .box-description h1 {
+        font-size: 75px;
+    }
+    .box-description h3 {
+        font-size: 50px;
+    }
+    .box-description h4, .box-description p {
+        font-size: 20px;
+    }
+    .box-image {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box-description {
+        width: 95%;
+        transition: width 1s ease; 
+    }
+    .box-description h1 {
+        font-size: 70px;
+    }
+    .box-description h3 {
+        font-size: 45px;
+    }
+    .box-description h4, .box-description p {
+        font-size: 20px;
+    }
+    .box-image {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 320px) {
+    .box-description {
+        width: 100%;
+        padding-left: 5px;
+        transition: width 1s ease, padding-left 1s ease; 
+    }
+    .box-description h1 {
+        font-size: 65px;
+    }
+    .box-description h3 {
+        font-size: 45px;
+    }
+    .box-description h4, .box-description p {
+        font-size: 20px;
+    }
+    .box-image {
+        margin-top: 100px;
+    }
+}
+
+
+
+
