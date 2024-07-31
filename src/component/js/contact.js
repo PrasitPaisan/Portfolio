@@ -7,16 +7,16 @@ const Contact = () => {
                <h1>Contact</h1>
                <div className="social">
                     <div className="social-box">
-                        <div className="box-logo-contact"><img className="logo-icons" src="/facebook-logo.png" alt="facebook"/></div>
-                        <div className="box-logo-contact"><img className="logo-icons" src="/github.png" alt="github"/></div>
-                        <div className="box-logo-contact"><img className="logo-icons" src="/line.png" alt="line"/></div>
-                        <div className="box-logo-contact"><img className="logo-icons" src="/linkedin.png" alt="linkin"/></div>
+                        <div className="box-logo-contact"><img className="logo-icons" src="/logo/facebook-logo.png" alt="facebook"/></div>
+                        <div className="box-logo-contact"><img className="logo-icons" src="/logo/github.png" alt="github"/></div>
+                        <div className="box-logo-contact"><img className="logo-icons" src="/logo/line.png" alt="line"/></div>
+                        <div className="box-logo-contact"><img className="logo-icons" src="/logo/linkedin.png" alt="linkin"/></div>
                     </div>
                </div>
                <div className="contact-alert-contact">
                      <div className="contact-box contactbox1">
                         <div className="box-logo-contact">
-                            <img className="logo-icons" src="/map.png"/>
+                            <img className="logo-icons" src="/logo/map.png"/>
                         </div>
                         <div className="description-contact">
                                 <ul>
@@ -27,7 +27,7 @@ const Contact = () => {
                      </div>
                      <div className="contact-box contactbox2">
                         <div className="box-logo-contact">
-                            <img className="logo-icons" src="telephone-call.png"/>
+                            <img className="logo-icons" src="/logo/telephone-call.png"/>
                         </div>
                         <div className="description-contact">
                                 <ul>
@@ -38,7 +38,7 @@ const Contact = () => {
                      </div>
                      <div className="contact-box contactbox3">
                         <div className="box-logo-contact">
-                            <img className="logo-icons" src='/gmail-logo.png'/>
+                            <img className="logo-icons" src='/logo/gmail-logo.png'/>
                         </div>
                         <div className="description-contact">
                                 <ul>

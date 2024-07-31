@@ -7,7 +7,7 @@ const One = () =>{
         <div>
             <div className="one-background">
                 <div className="box-image">
-                <img className="handsomeImage" src="https://i.pinimg.com/originals/72/71/0b/72710bd4197858702e983cbecb18b6d7.jpg"></img>
+                    <img className="handsomeImage" src="/image/man.png"></img>
                 </div>
                 <div className="box-description">
                     <h1>Prasit Paisan</h1>

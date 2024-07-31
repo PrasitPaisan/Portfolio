@@ -43,6 +43,17 @@
         transform: translateY(-20px); 
     }
 }
+.handsomeImage {
+    width: 400px;
+    height: 550px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: all 1s ease; 
+    /* box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.5); */
+    animation: borderMove 3s ease infinite;
+}
 
 .box-description {
     width: 55%; 
@@ -112,17 +123,6 @@
     }
 }
 
-.handsomeImage {
-    width: 365px;
-    height: 550px;
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    transition: all 1s ease; 
-    box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.5);
-    animation: borderMove 3s ease infinite;
-}
 
 
 
