@@ -13,7 +13,7 @@ const One = () =>{
                     <h1>Prasit Paisan</h1>
                     <h3>Computer engineering</h3>
                     <h4>Naresuan university Thailand</h4>
-                    <p>Dear to think dear to do</p>
+                    <p>Dare to think dare to do</p>
                 </div>
             </div>
         </div>
